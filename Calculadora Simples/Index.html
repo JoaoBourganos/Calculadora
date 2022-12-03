@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="header-calc">
+    <div class="fundo">
+        <h1>Calculadora Simples</h1>
+        <div class="calculadora">
+            <div>
+                <label class="label" for="valor1">Valor 1: </label>
+                <input class="valor1" type="text" name="valor1" id="valor1">
+                <label class="label" for="valor2">Valor 2: </label>
+                <input class="valor2" type="text" name="valor2" id="valor2">
+            </div>
+            <label class="label" for="resultado">Resultado: </label>
+                <label class="total" id="total"></label>
+            <br/>
+            <div>
+                <input class = "botao" type="button" value="*" name="multiplicacao" id="multiplicacao"
+                    onclick = "Calcular('*')">
+                    <input class = "botao" type="button" value="/" name="divisao" id="divisao"
+                    onclick = "Calcular('/')">
+                <input class="botao" type="button" value="-" name="subtracao" id="subtracao"
+                    onclick = "Calcular('-')">
+                <input class = "botao" type="button" value="+" name="adicao" id="adicao"
+                    onclick = "Calcular('+')">
+            </div>
+            <br/>
+    </div>
+</body>
+
+</html>
